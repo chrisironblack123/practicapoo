@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion Orientada a Objetos</title>
+</head>
+<body>
+    <h2>Programacion Orientada a Objetos (19/10/25 a 26/10/25)</h2>
+    <p> Preguntas conceptuales y de Aplicacion </p>
+
+    <section>
+       <h5>1-¿Qué es la programación orientada a objetos (POO)? </h5>
+       <p>es un modelo de programación que organiza el código en torno a objetos, que son entidades <br>
+        que agrupan datos (atributos) y funcionalidades (métodos). En lugar de un enfoque secuencial,<br>
+        la POO organiza el software como un conjunto de objetos que interactúan entre sí, similar a cómo<br>
+        pensamos sobre el mundo real.  </p>
+    </section>
+        <section>
+       <h5>2-Define los conceptos de clase y objeto. </h5>
+       <p> Una clase es una plantilla o modelo que define las propiedades (atributos) y el comportamiento <br> 
+        (métodos) que tendrán los objetos. 
+        Un objeto es una instancia concreta de una clase, es decir, una entidad real o abstracta que se <br>
+        crea a partir de esa plantilla, con sus propios datos específicos. </p>
+    </section>
+    <section>
+       <h5>3-Menciona los cuatro pilares de la POO. </h5>
+       <p>Los cuatro pilares de la programación orientada a objetos (POO) son la abstracción, el encapsulamiento,<br>
+         la herencia y el polimorfismo.  </p>
+    </section>
+      <section>
+       <h5>4- Da un ejemplo de una clase sencilla llamada Vehiculo con un método acelerar().</h5>
+       <p>
+       class Vehiculo :
+            def_init_(self, marca) :
+                self.marca = marca # propiedad de la marca
+                self,velocidad = 0 # atributo de la velocidad, inicial en 0
+
+            def acelerar(self, incremento):
+            """Aumenta la velocidad del vehiculo."""
+               self.velocidad += incremento
+               print(f"El {self.marca} acelero a {self.velocidad}km/h.")
+
+        # por ejemplo
+        mi_carro = vehiculo("Nissan")
+        mi_carro.acelerar(60)
+        mi_carro.acelerar(30)      
+    </p>    
+    </section>
+    <section>
+       <h5>5-¿Qué es la herencia y cómo se aplica?</h5>
+       <p>La herencia es un mecanismo fundamental de la programación orientada a objetos (POO)que permite que <br>
+        una nueva clase (clase derivada) herede atributos y métodos de una clase existente (clase base), lo que <br>
+        promueve la reutilización de código y la creación de jerarquías de clases. Se aplica al crear una clase <br>
+        que hereda las características de otra, y luego se puede extender o modificar ese comportamiento para <br>
+        crear clases más específicas. </p>
+    </section>
+    <section>
+       <h5>6- Explica el concepto de encapsulamiento con un ejemplo.</h5>
+       <p>El encapsulamiento es un concepto de la programación orientada a objetos (POO) que agrupa los datos <br>
+         (atributos) y los métodos que operan sobre ellos en una sola unidad, como una clase, y restringe el acceso <br>
+         directo a los datos. Esto protege la integridad de los datos al obligar a que se modifiquen a través de los <br>
+         métodos (conocidos como getters y setters), lo que permite controlar cómo y cuándo se accede a ellos.
+         Por ejemplo, en una clase Coche, los atributos velocidadActual se pueden mantener privados, y se usan métodos <br>
+          públicos getVelocidad() y setVelocidad() para interactuar con ellos. </p>
+     </section>
+    <section>
+       <h5>7-¿Qué es el polimorfismo? </h5>
+       <p>El polimorfismo en la programación orientada a objetos es la capacidad de tratar objetos de diferentes clases <br>
+        como si fueran de una misma superclase común. Esto permite que un solo método, con el mismo nombre, pueda responder<br>
+         de manera diferente según el objeto que lo invoque, haciendo el código más flexible y reutilizable.  </p>
+    </section>
+    <section>
+       <h5>8-¿Por qué la POO mejora la mantenibilidad del código? </h5>
+       <p>La Programación Orientada a Objetos (POO) mejora la mantenibilidad del código gracias a la modularidad, que aísla <br> 
+        los cambios dentro de clases independientes, y la encapsulación, que protege los datos internos y simplifica las <br>
+        interacciones. Estos principios permiten realizar modificaciones en una parte del código sin afectar al resto, lo <br>
+        que facilita la corrección de errores y la actualización de funcionalidades. </p>
+    </section> 
+</body>
+</html> 
